@@ -1,0 +1,1 @@
+Directory ini telah disesuaikan dengan apa yang dipakai oleh pembuat *me. Download atau clone dari luar apabila tidak ingin susah payah mengubah direktori dalam kode maupun membuat folder ulang. Terimakasih.

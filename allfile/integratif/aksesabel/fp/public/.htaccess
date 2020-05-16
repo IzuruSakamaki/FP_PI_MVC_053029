@@ -1,0 +1,16 @@
+# Menghindari ambiguitas file di dalam public
+Options -Multiviews
+
+# Proses rewrite (menulis ulang URL)
+RewriteEngine On
+
+# Kondisi di mana URL yang diakses adalah folder, maka diabaikan
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Kondisi di mana URL yang diakses adalah file, maka diabaikan
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Aturan menulis ulang URL
+# Misal:
+# ​ public/agenda​ akan dimengerti sebagai: ​ public​ / ​ index.php ​ ?url=​ agenda
+RewriteRule ^(.*)$ index.php?url=$1 [L]

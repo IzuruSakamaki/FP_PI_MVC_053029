@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}Sumbangan{% endblock %}
+{% block body %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col mt-4">
+                <div class="row">
+                    <div class="col">
+                        {{ flash.flash() }}
+                    </div>
+                </div>
+                <table class="table table-stripped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Jenis</th>
+                            <th>Kategori</th>
+                            <th>Banyak</th>
+                            <th>Satuan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for daftar in dompet %}
+                        <tr>
+                            <td>{{ daftar['jenis'] }}</td>
+                            <td>{{ daftar['kategori'] }}</td>
+                            <td>{{ daftar['banyak'] }}</td>
+                            <td>{{ daftar['satuan'] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Block Script -->
+    {% block script %}
+        <script src="{{ BASE_URL }}/js/jquery-3.5.0.min.js"></script>
+        <script src="{{ BASE_URL }}/js/bootstrap.min.js"></script>
+        <script src="{{ BASE_URL }}/js/popper.min.js"></script>
+        <script src="{{ BASE_URL }}/js/script.js"></script>
+    {% endblock %}
+{% endblock %}

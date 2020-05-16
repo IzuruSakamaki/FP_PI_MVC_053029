@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+{% block title %}Sumbangan{% endblock %}
+{% block body %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col mt-4">
+                <div class="row">
+                    <div class="col">
+                        {{ flash.flash() }}
+                    </div>
+                </div>
+                <div class="btn btn-success" data-toggle="modal" data-target="#sumbang">Menyumbang</div>
+                <div class="dropdown float-right mb-4">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">List by</button>
+                    <div class="dropdown-menu  dropdown-menu-right">
+                        <a class="dropdown-item" href="{{ BASE_URL }}/sumbangan/listed">Permintaan</a>
+                        <a class="dropdown-item active" href="{{ BASE_URL }}/sumbangan">Komoditas</a>
+                    </div>
+                </div>
+                <table class="table table-stripped table-hover">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Jenis</th>
+                            <th>Kategori</th>
+                            <th>Terkumpul</th>
+                            <th>Satuan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for daftar in sumbangan %}
+                        <tr>
+                            <td>{{ daftar['no'] }}</td>
+                            <td>{{ daftar['jenis'] }}</td>
+                            <td>{{ daftar['kategori'] }}</td>
+                            <td>{{ daftar['banyak'] }}</td>
+                            <td>{{ daftar['satuan'] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="sumbang" tabindex="-1" role="dialog" aria-labelledby="sumbang" aria-hidden="false">
+        <form action="{{ BASE_URL }}/sumbangan/add" method="POST">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="judulModal">Mulai Menyumbang</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="description">Jenis</label>
+                            <select class="form-control" name="jenis">
+                                <option value="Bahan Makanan">Bahan Makanan</option>
+                                <option value="Obat">Obat</option>
+                                <option value="Uang Tunai">Uang Tunai</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Kategori</label>
+                            <select class="form-control" name="kategori">
+                                <option value="Beras">Bahan Makanan: Beras</option>
+                                <option value="Minyak">Bahan Makanan: Minyak</option>
+                                <option value="Mie Instan">Bahan Makanan: Mie Instan</option>
+                                <option value="Ultraflu">Obat: Ultraflu</option>
+                                <option value="Uang">Uang Tunai</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Banyak</label>
+                            <input type="number" class="form-control" id="banyak" name="banyak" placeholder="-" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Satuan</label>
+                            <select class="form-control" name="satuan">
+                                <option value="Kilogram">Kilogram: Beras</option>
+                                <option value="Liter">Liter: Minyak</option>
+                                <option value="Bungkus">Bungkus: Mie Instan</option>
+                                <option value="Tablet">Tablet: Ultraflu</option>
+                                <option value="Rupiah">Rupiah: Uang Tunai</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="{{ BASE_URL }}/sumbangan/donatur">Ingin Menyumbang Beberapa Jenis?</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-success">Sumbang</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Block Script -->
+    {% block script %}
+        <script src="{{ BASE_URL }}/js/jquery-3.5.0.min.js"></script>
+        <script src="{{ BASE_URL }}/js/bootstrap.min.js"></script>
+        <script src="{{ BASE_URL }}/js/popper.min.js"></script>
+        <script src="{{ BASE_URL }}/js/script.js"></script>
+    {% endblock %}
+{% endblock %}

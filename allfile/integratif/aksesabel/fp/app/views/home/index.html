@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1 class="display-4">GO FUNDING!</h1>
+            <p class="lead">Simple Crowdfunding Site for Final Project</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table table-stripped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Pembaruan Sumbangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for daftar in log_sumbangan %}
+                        <tr>
+                            <td>{{ daftar['id'] }} telah menyumbang {{ daftar['jenis'] }} senilai {{ daftar['banyak'] }} {{ daftar['satuan'] }} {{ daftar['kategori'] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table table-stripped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Penyaluran</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for daftar in log_penyaluran %}
+                        <tr>
+                            <td>{{ daftar['jenis'] }} senilai {{ daftar['banyak'] }} {{ daftar['satuan'] }} {{ daftar['kategori'] }} telah disalurkan oleh/melalui pihak terkait</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

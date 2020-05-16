@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block title %}Sumbangan{% endblock %}
+{% block body %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col mt-4">
+                <div class="row">
+                </div>
+                <div class="dropdown float-right mb-4">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">List by</button>
+                    <div class="dropdown-menu  dropdown-menu-right">
+                        <a class="dropdown-item active" href="{{ BASE_URL }}/sumbangan/listed">Permintaan</a>
+                        <a class="dropdown-item" href="{{ BASE_URL }}/sumbangan">Komoditas</a>
+                    </div>
+                </div>
+                <table class="table table-responsive table-stripped table-hover">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                            <th>Kategori</th>
+                            <th>Diperlukan</th>
+                            <th>Satuan</th>
+                            <th>Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for daftar in sumbangan %}
+                        <tr>
+                            <td>{{ daftar['no'] }}</td>
+                            <td>{{ daftar['nama'] }}</td>
+                            <td>{{ daftar['alamat'] }}</td>
+                            <td>{{ daftar['kategori'] }}</td>
+                            <td>{{ daftar['banyak'] }}</td>
+                            <td>{{ daftar['satuan'] }}</td>
+                            <td>{{ daftar['deskripsi'] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Block Script -->
+    {% block script %}
+        <script src="{{ BASE_URL }}/js/jquery-3.5.0.min.js"></script>
+        <script src="{{ BASE_URL }}/js/bootstrap.min.js"></script>
+        <script src="{{ BASE_URL }}/js/popper.min.js"></script>
+        <script src="{{ BASE_URL }}/js/script.js"></script>
+    {% endblock %}
+{% endblock %}

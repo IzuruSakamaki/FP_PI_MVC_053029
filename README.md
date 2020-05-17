@@ -59,7 +59,7 @@ Oleh : Mohammad Ifaizul Hasan - 05311840000029
 
 ![home](/image/1home.png)
 
-**Sumbangan.php**
+**sumbangan**
 * **`index.html`**
 
 ![sumbangan](/image/2sumbangan.png)
@@ -80,12 +80,12 @@ Oleh : Mohammad Ifaizul Hasan - 05311840000029
 
 ![sumbangan](/image/7sumbanganbanyak.png)
 
-**Dompet.php**
+**dompet**
 * **`index.html`**
 
 ![dompet](/image/10dompetrekap.png)
 
-**Akun.php**
+**akun**
 * **`index.html`**
 
 ![akun](/image/9akunregisterberhasil.png)

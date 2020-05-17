@@ -56,7 +56,7 @@ Oleh : Mohammad Ifaizul Hasan - 05311840000029
 ## Views
 **home**
 * **`index.html`**
-
+![home](/image/1home.png)
 **Sumbangan.php**
 * **`index.html`**
 * **`listed.html`**

@@ -56,15 +56,44 @@ Oleh : Mohammad Ifaizul Hasan - 05311840000029
 ## Views
 **home**
 * **`index.html`**
+
 ![home](/image/1home.png)
+
 **Sumbangan.php**
 * **`index.html`**
+
+![sumbangan](/image/2sumbangan.png)
+
+![sumbangan](/image/3sumbangankomoditas.png)
+
+![sumbangan](/image/5sumbanganmenyumbang.png)
+
+![sumbangan](/image/6sumbanganberhasil.png)
+
+![sumbangan](/image/8sumbangangagal.png)
+
 * **`listed.html`**
+
+![sumbangan](/image/4sumbanganpermintaan.png)
+
 * **`donatur.html`**
+
+![sumbangan](/image/7sumbanganbanyak.png)
 
 **Dompet.php**
 * **`index.html`**
 
+![dompet](/image/10dompetrekap.png)
+
 **Akun.php**
 * **`index.html`**
+
+![akun](/image/9akunregisterberhasil.png)
+
 * **`profile.html`**
+
+![akun](/image/11akunprofile.png)
+
+![akun](/image/12akunedit.png)
+
+![akun](/image/13akuneditberhasil.png)

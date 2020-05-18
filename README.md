@@ -61,6 +61,8 @@ Oleh : Mohammad Ifaizul Hasan - 05311840000029
 
 gambar 1.1. Halaman utama. Menampilkan log sumbangan dan penyaluran
 
+### .
+
 **sumbangan**
 * **`index.html`**
 
@@ -68,21 +70,31 @@ gambar 1.1. Halaman utama. Menampilkan log sumbangan dan penyaluran
 
 gambar 2.1. Halaman Sumbangan. Menampilkan daftar dari sumbangan yang diterima/diperbolehkan
 
+### .
+
 ![sumbangan](/image/3sumbangankomoditas.png)
 
 gambar 2.2. Halaman Sumbangan. Menampilkan dropdown menu yang tersedia
+
+### .
 
 ![sumbangan](/image/5sumbanganmenyumbang.png)
 
 gambar 2.3. Halaman Sumbangan. Menampilkan modal/popup untuk menyumbang satu jenis
 
+### .
+
 ![sumbangan](/image/6sumbanganberhasil.png)
 
 gambar 2.4. Halaman Sumbangan. Menampilkan message ketika sumbangan berhasil
 
+### .
+
 ![sumbangan](/image/8sumbangangagal.png)
 
 gambar 2.5. Halaman Login Register. Menampilkan message ketika sumbangan gagal karena belum login
+
+### .
 
 * **`listed.html`**
 
@@ -90,11 +102,15 @@ gambar 2.5. Halaman Login Register. Menampilkan message ketika sumbangan gagal k
 
 gambar 2.6. Halaman Sumbangan. Menampilkan daftar dari permintaan sumbangan
 
+### .
+
 * **`donatur.html`**
 
 ![sumbangan](/image/7sumbanganbanyak.png)
 
 gambar 2.7. Side: Halaman Donatur. Menampilkan halaman untuk melakukan donasi banyak kategori sekaligus
+
+### .
 
 **dompet**
 * **`index.html`**
@@ -103,6 +119,8 @@ gambar 2.7. Side: Halaman Donatur. Menampilkan halaman untuk melakukan donasi ba
 
 gambar 2.8. Halaman Dompet. Menampilkan hasil rekap dari donasi yang telah dilakukan
 
+### .
+
 **akun**
 * **`index.html`**
 
@@ -110,16 +128,24 @@ gambar 2.8. Halaman Dompet. Menampilkan hasil rekap dari donasi yang telah dilak
 
 gambar 2.9. Halaman Akun. Menampilkan formulir login dan register (contoh disini adalah ketika berhasil melakukan registrasi)
 
+### .
+
 * **`profile.html`**
 
 ![akun](/image/11akunprofile.png)
 
 gambar 2.10. Halaman Akun. Menampilkan identitas diri sesuai dengan user yang login
 
+### .
+
 ![akun](/image/12akunedit.png)
 
 gambar 2.11. Halaman Akun. Menampilkan modal/popup untuk mengubah identitas user yang login
 
+### .
+
 ![akun](/image/13akuneditberhasil.png)
 
 gambar 2.12. Halaman Akun. Menampilkan pesan berhasil mengubah identitas user yang login
+
+### .
